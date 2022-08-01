@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+
+      body {
+        font-family: "Source Code Pro", monospace;
+      }
+      .card-title {
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+      @media (max-width: 800px) {
+        #welcome-section {
+          padding-top: 50px;
+          display: grid;
+          grid-template-rows: 50% 50%;
+          justify-items: center;
+          height: 50vh;
+        }
+      }
+      #projects {
+        background-color: black;
+      }
+      #work {
+        color: whitesmoke;
+        padding-top: 20px;
+      }
+      #send {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 40%;
+        align-self: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">E</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-felex align-items-center w-100">
+            <li class="flex-fill"></li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-dark" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-dark" aria-current="page" href="#work"
+                >Work</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-dark" href="#contact">Contact</a>
+            </li>
+            <li class="flex-fill"></li>
+            <li class="nav-item ms-auto">
+              <a class="text-dark" href="https://github.com/seinauskaite"></a>
+              <a
+                class="nav-link text-dark"
+                href="https://github.com/seinauskaite"
+                target="_blank"
+                id="profile-link"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container" id="home">
+      <div class="row align-items-center" id="welcome-section">
+        <div class="col-6" id="welcome1">
+          <img
+            class="img-fluid w-75 mx-auto d-block"
+            src="https://media.istockphoto.com/vectors/cute-girl-smiling-sketch-for-your-design-vector-id485506997?k=20&m=485506997&s=612x612&w=0&h=Ig21WU0bTKd2Q8c-6RgEFiiJm-GnwowXu4R4pkrP5-A="
+            alt="Me"
+          />
+        </div>
+        <div class="col-6" id="welcome2">
+          <h1 class="display-3 text-center text-sm-start fw-normal">
+            I can code ;)
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container" id="projects">
+        <h2 class="text-center display-8 fw-bold" id="work">work</h2>
+        <div class="row gap-2">
+          <div class="col-1"></div>
+          <div class="col-5 rounded-3 py-5 project-tile">
+            <a href="https://fw234.csb.app/" target="_blank">
+              <img
+                class="img-fluid"
+                id="project-image1"
+                alt="Documentation Page"
+                src="https://codesandbox.io/api/v1/sandboxes/fw234/screenshot.png"
+              />
+              <h5 class="card-title p-4 text-center">Documentation Page</h5>
+            </a>
+          </div>
+
+          <div class="col-5 rounded-3 py-5">
+            <a
+              href="https://codesandbox.io/s/festive-johnson-8s5vc"
+              target="_blank"
+            >
+              <img
+                class="img-fluid"
+                id="project-image2"
+                alt="Personal Page"
+                src="https://screenshots.codesandbox.io/8s5vc/119.png"
+              />
+              <h5 class="card-title p-4 text-center">Personal Page</h5>
+            </a>
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row gap-2">
+          <div class="col-1"></div>
+          <div class="col-5 rounded-3 py-5">
+            <a
+              href="https://codesandbox.io/s/build-a-product-landing-page-q3u19"
+              target="_blank"
+            >
+              <img
+                class="img-fluid"
+                id="project-image3"
+                alt="Landing-page"
+                src="https://codesandbox.io/api/v1/sandboxes/q3u19/screenshot.png"
+              />
+              <h5 class="card-title p-4 text-center">Landing Page</h5>
+            </a>
+          </div>
+          <div class="col-5 rounded-3 py-5">
+            <a
+              href="https://codesandbox.io/s/2-landing-page-3tc1u"
+              target="_blank"
+            >
+              <img
+                class="img-fluid"
+                id="project-image4"
+                alt="Form"
+                src="https://screenshots.codesandbox.io/3tc1u/2.png"
+              />
+              <h5 class="card-title p-4 text-center">Form Page</h5>
+            </a>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </section>
+
+      <section class="container" id="contact">
+        <h4 class="py-4 fw-bold text-center">Contact me!</h4>
+        <form action="https://www.freecodecamp.com/email-submit">
+          <div class="row py-2">
+            <div class="col-2"></div>
+            <div class="col-2">
+              <label for="email" class="form-label pt-2">Your email</label>
+            </div>
+            <div class="col-4">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="elinga@gmail.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2">
+              <label for="message" class="pt-2">Message</label>
+            </div>
+            <div class="col-4">
+              <textarea
+                class="form-control"
+                placeholder="bla bla"
+                id="message"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="col-3"></div>
+          <div class="d-grid py-4 col-6 mx-auto">
+            <button
+              type="button"
+              class="btn btn-outline-secondary mx-auto px-5"
+            >
+              send
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</html>
